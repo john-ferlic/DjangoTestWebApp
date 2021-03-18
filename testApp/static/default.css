@@ -1,0 +1,16 @@
+body {
+    background: white url("mountain.jpg") no-repeat;
+}
+h1 {
+    color: black;
+}
+p {
+    color: red;
+}
+a { 
+    text-decoration: none !important;
+}
+.center {
+    text-align: center;
+    padding: 70px 0;
+}

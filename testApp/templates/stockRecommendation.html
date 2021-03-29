@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Stock Recommendation</title>
+    <link rel="stylesheet" href="{% static 'default.css' %}">
+</head>
+<body class="center">
+    <h1>Enter a Stock for a recommendation</h1>
+    <form action="/stockProcess/" method="POST">
+        {% csrf_token %}
+        Stock Ticker: <input type="text" name="ticker" /><br />
+        <input type="submit" value="Post" />
+    </form>
+    <p >INFO: {{ stock_info }}</p>
+</body>
+</html>

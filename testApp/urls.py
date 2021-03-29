@@ -6,5 +6,7 @@ from . import views
 urlpatterns = [
     url('create', views.index, name='index'),
     url('show', views.show_post, name='show_post'),
-    url('header', views.header, name='header')
+    url('header', views.header, name='header'),
+    url('stockRec', views.stockRec, name='stockRec'),
+    url('stockProcess', views.stockProcess, name='stockProcess')
 ]
